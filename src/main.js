@@ -5,6 +5,8 @@ import Footer from './Footer.vue'
 import ServerList from './ServerList.vue'
 import ServerDetails from './ServerDetails.vue'
 
+export const eventBus = new Vue();
+
 Vue.component('app-header', Header);
 Vue.component('app-footer', Footer);
 Vue.component('app-server-list', ServerList);
@@ -14,3 +16,4 @@ new Vue({
   el: '#app',
   render: h => h(App)
 })
+
